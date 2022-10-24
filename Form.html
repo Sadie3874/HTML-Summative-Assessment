@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Book suggestion</h1>
+      <nav>
+        <ul>
+          <!-- links to other websites -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="Form.html">Survey </a></li>
+          <li><a href="videos.html">Videos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- 
+        forms - you have the legend which is just the title of the form
+        then you have your label for your form so the user will know what it is 
+        input is what kind of option you are going to have for the use to either type in or select or anyother things that can work on the form
+      -->
+      <form name="Book-suggestions" id="Book suggestions" method="get">
+        <label for="tv-shows">Please enter your Book suggestion [required]: </label>
+        <input type="text" name="shows" id="tv-shows" reqiured />
+        <input type="reset" />
+        <br />
+        <br />
+        <fieldset>
+          <legend>What is the genre of the book</legend>
+
+          <input type="radio" name="book" id="horror" value="horror" />
+          <label for="horror">horror</label>
+
+          <input type="radio" name="book" id="comedy" value="comedy" />
+          <label for="comedy">comedy</label>
+
+          <input type="radio" name="book" id="Sci-Fi" value="Sci-Fi" />
+          <label for="Sci-Fi">Sci-Fi</label>
+
+          <input type="radio" name="book" id="fantsy" value="fantsy" />
+          <label for="fantsy">fantsy</label>
+        </fieldset>
+        <br />
+        <br />
+
+        <label for="quantity"> how many days does it take you to read a book?:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="1000" />
+
+        <h4>Enter date form was submited</h4>
+
+        <label for="datemax"> Enter date form was filled out</label>
+        <input type="date" id="datemax" name="date" max="2023-12-31" />
+        <input type="submit" value="submit" />
+      </form>
+
+      <footer>
+        <!-- 
+          the footer for the website, for copy right and contact info 
+        -->
+        <p>&#169; 2022 Sadie</p>
+      </footer>
+    </main>
+  </body>
+</html>
